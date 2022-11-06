@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+    
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background-color: #111;
+    border: none;
+    margin: 2px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.01);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background-color: red;
+    padding: 9px;
+    border-radius: 4px;
+}
+#total::before{
+    content: "Total: ";
+}
+#submit,.btnsearch button{
+    width: 100%;
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#submit button:hover, 
+.btnsearch button:hover{
+    letter-spacing: 2px;
+    background-color: rgb(33, 185, 33);
+}
+
+/* Start Outputs  */
+.searchBlock{
+    margin-top: 10px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btnsearch button{
+    width: 45%;
+}
+#deleteAll button{
+    width: 100%;
+    margin: 10px 0px;
+    height: 30px;
+    color: #000;
+    transition: .5s;
+    background-color: #f90;
+}
+#deleteAll button:hover{
+    letter-spacing: 1px;
+    background-color: #f00;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+th{
+    text-transform: uppercase;
+    
+}
+th,td{
+    padding: 1px;
+}
+#delete,#update{
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#delete{
+    background-color: red;
+}
+#update{
+    background-color: yellowgreen;
+}
